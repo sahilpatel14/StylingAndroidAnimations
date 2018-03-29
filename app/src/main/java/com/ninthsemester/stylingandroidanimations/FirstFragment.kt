@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_first.view.*
 
@@ -20,8 +22,21 @@ class FirstFragment : Fragment() {
                               savedInstanceState: Bundle?): View? =
             inflater.inflate(R.layout.fragment_first, container, false)
                     .also {view ->
-                        view.NextButton.setOnClickListener {
-                            openSecondFragment()
+                        view.NextButton.setOnClickListener {view ->
+                            AnimationUtils.loadAnimation(activity, android.R.anim.fade_out)
+                                    .apply {
+                                        view.startAnimation(this)
+                                        setAnimationListener(object : Animation.AnimationListener {
+
+                                            override fun onAnimationEnd(animation: Animation?) {
+                                                view.visibility = View.GONE
+                                                openSecondFragment()
+                                            }
+
+                                            override fun onAnimationStart(animation: Animation?) {}
+                                            override fun onAnimationRepeat(animation: Animation?) {}
+                                        })
+                                    }
                         }
                     }
 
