@@ -22,7 +22,7 @@ class FirstActivity : AppCompatActivity() {
             animation.setAnimationListener(object : Animation.AnimationListener {
 
                 override fun onAnimationEnd(animation: Animation?) {
-                    it.visibility = View.GONE
+                    it.visibility = View.INVISIBLE
                     openActivity(SecondActivity::class.java)
                 }
 
