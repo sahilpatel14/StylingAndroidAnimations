@@ -11,4 +11,6 @@ https://blog.stylingandroid.com/vectordrawables-part-3/
     android:duration="5000"
     android:valueType="floatType"
     android:interpolator="@android:interpolator/linear"
+    android:repeatMode="reverse"
+    android:repeatCount="infinite"
     />
