@@ -7,7 +7,7 @@
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
     <ImageView
-        app:srcCompat="@drawable/animated_android"
+        app:srcCompat="@drawable/animated_star"
         android:id="@+id/imageView"
         android:contentDescription="@null"
         android:layout_width="wrap_content"
