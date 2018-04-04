@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+An inset drawable enables us to put a margin around an existing drawable.
+-->
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/dialog_background"
+    android:insetLeft="10dp"
+    android:insetRight="10dp">
+</inset>
