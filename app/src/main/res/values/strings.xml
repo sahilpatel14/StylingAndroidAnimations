@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StylingAndroidAnimations</string>
+    <string name="hello">This is some text to demonstrate highlightedTextView and show how it works by highlighting particular words.</string>
 </resources>
