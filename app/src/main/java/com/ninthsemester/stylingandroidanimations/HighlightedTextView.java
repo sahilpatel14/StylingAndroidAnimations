@@ -1,6 +1,7 @@
 package com.ninthsemester.stylingandroidanimations;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatTextView;
 import android.text.Spannable;
@@ -31,6 +32,23 @@ public class HighlightedTextView extends AppCompatTextView {
 
     public HighlightedTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.HighlightedTextView, defStyle, 0);
+        CharSequence text = ta.getString(R.styleable.HighlightedTextView_android_text);
+
+        if (text != null) {
+            updateText(text);
+        }
+        String pattern = ta.getString(R.styleable.HighlightedTextView_pattern);
+        if (pattern != null) {
+            setPattern(pattern);
+        }
+        int style = ta.getInteger(R.styleable.HighlightedTextView_highlightStyle, -1);
+        if (style >= 0) {
+            setHighlightStyle(style);
+        }
+
+        ta.recycle();
     }
 
     public String getPattern() {
@@ -46,7 +64,7 @@ public class HighlightedTextView extends AppCompatTextView {
         return highlightStyle;
     }
 
-    public void setHighlightStyle() {
+    public void setHighlightStyle(int highlightStyle) {
         this.highlightStyle = highlightStyle;
         updateText(getText());
     }
