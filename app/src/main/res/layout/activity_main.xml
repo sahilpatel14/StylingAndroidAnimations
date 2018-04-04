@@ -9,7 +9,5 @@
         android:id="@+id/HighlightedText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        app:pattern="([Hh]ighlight)"
-        app:highlightStyle="italic"
         android:text="@string/hello" />
 </LinearLayout>

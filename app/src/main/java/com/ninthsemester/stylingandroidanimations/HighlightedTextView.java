@@ -27,7 +27,7 @@ public class HighlightedTextView extends AppCompatTextView {
     }
 
     public HighlightedTextView(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        this(context, attrs, R.attr.highlightedTextViewStyle);
     }
 
     public HighlightedTextView(Context context, AttributeSet attrs, int defStyle) {

@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="HighlightedTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="highlightStyle">bold|italic</item>
+        <item name="pattern">([Hh]ighlight)</item>
+    </style>
+
+
+    <style name="MyTheme" parent="Theme.AppCompat">
+        <item name="highlightedTextViewStyle">@style/HighlightedTextViewStyle</item>
+    </style>
+    
 </resources>
