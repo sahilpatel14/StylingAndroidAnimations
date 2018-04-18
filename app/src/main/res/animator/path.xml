@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-https://blog.stylingandroid.com/vectordrawables-part-3/
+
+    todo 2
+
+    https://blog.stylingandroid.com/vectordrawables-part-3/
+
+    * VectorDrawable you are animating from and to should share the same number of commands.
+    * android:trimPathEnd - The fraction of the path to trim from the end, in the range from 0 to 1. Default is 1.
+
 -->
 
 <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"

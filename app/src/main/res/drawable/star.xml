@@ -1,3 +1,8 @@
+<!--
+    todo 1
+    the actual vector that we will be working on.
+-->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:viewportHeight="500"
     android:viewportWidth="500"

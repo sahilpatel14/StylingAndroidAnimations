@@ -13,6 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /**
+         * todo 6
+         *
+         * Starting the animation is also similar.
+         */
+
         val drawable = imageView.drawable
         if (drawable is Animatable) {
             (drawable as Animatable).start()

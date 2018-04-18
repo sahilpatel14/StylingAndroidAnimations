@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
+    <!--
+        todo 4
+        usage is pretty much similar to other animated drawable
+    -->
+
     <ImageView
         app:srcCompat="@drawable/animated_star"
         android:id="@+id/imageView"
