@@ -5,9 +5,7 @@ https://blog.stylingandroid.com/category/animation/page/5/
 
 # What's in it?
 
-Contains working example of vectors and how to animate groups inside vectors. We define two objectAnimators in res/animator
-directory called shrug and blink. 
-Next we define <animated-vector> which defines different animations for various groups inside our main drawable.
+Contains example about how to use pathTrimEnd property of path in a vector. This property gives a nice animation which draws the whole shape in a particular duration of time.
 
 # How it looks?
 
