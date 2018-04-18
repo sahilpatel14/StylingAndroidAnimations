@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 3
+    Changing the color of the shape when transition happens between the two shapes.
+-->
+
 <objectAnimator android:propertyName="fillColor"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:valueType="colorType"

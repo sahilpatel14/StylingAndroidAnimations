@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 1
+    The actual shape that we are going to morph. Take note that
+    the shape is relatively simple. The pathData does not have much to show.
+    Also, the resulting path data should have equal number of values as the
+    initial path data.
+-->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:viewportWidth="500"
     android:viewportHeight="500"
