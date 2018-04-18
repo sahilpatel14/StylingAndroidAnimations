@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        todo 3
+        Causes a color change in fillColor property every .25 seconds.
+        We change from black to white. The repeat mode is set to reverse,
+        therefore the colour goes from white to black and then back to white
+        and the whole thing keeps repeating.
+    -->
     <objectAnimator
         android:propertyName="fillColor"
         android:valueType="colorType"

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        todo 3
+        Causes a shrug animation to the path. This is achieved by changing
+        translation property in Y direction to go up by 10 pixels.
+        The path drawn comes back to it's original position and then repeats
+        the animation every 250 ms.
+    -->
     <objectAnimator
         android:propertyName="translateY"
         android:valueType="floatType"

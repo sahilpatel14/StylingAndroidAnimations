@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
+    <!--
+        todo 5
+        animated vectors can be used just like any other regular vectors.
+        Just make sure to start them from activity.
+    -->
+
     <ImageView
         app:srcCompat="@drawable/animated_android"
         android:id="@+id/imageView"

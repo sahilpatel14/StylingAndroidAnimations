@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 4
+    An animated vector is something like an enhancement to the
+    vector where we define animations for different groups and paths
+    int the vector.
+    Every animated vector is bound to a particular vector. Therefore, they
+    can not be reused. (one animated-vector for two or more vectors)
+
+    Before creating an animated-vector, make sure you have defined objectAnimators
+    for various groups.
+-->
+
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:drawable="@drawable/android">
 

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+todo 1
+    The actual vector that we will be animating. We will be getting
+    an svg file and we import it into android studio. After importing,
+    we separate out the elements of the animation into groups which need to be animated
+    together. Below we have a group for hands, the head, both eyes, and the arms.
+-->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:viewportWidth="500"
     android:viewportHeight="500"

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 2
+    Animated vectors are only supported for API level 21 and above.
+    Therefore we need to supply the same vector without the animation
+    for other devices. Make sure you only start the animation if the
+    target version is 21 or above.
+-->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:viewportWidth="500"
     android:viewportHeight="500"
