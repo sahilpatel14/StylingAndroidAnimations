@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-An inset drawable enables us to put a margin around an existing drawable.
+    An inset drawable enables us to put a margin around an existing drawable.
+    This means now the dialog_background drawable is not going to cover the
+    whole view. It will leave a space of 10dp in both sides.
+
+    https://stackoverflow.com/questions/38621380/what-are-insets-in-android
 -->
 
 <inset xmlns:android="http://schemas.android.com/apk/res/android"

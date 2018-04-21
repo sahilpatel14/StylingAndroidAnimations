@@ -1,6 +1,9 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!--
+        Base application theme.
+        This theme will be used for general purpose.
+    -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -8,10 +11,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--
+        Base style gives a default padding of 10dp.
+    -->
     <style name="base">
         <item name="android:padding">10dp</item>
     </style>
 
+    <!--
+        We want our custom toolbar to look like a dialog's toolbar.
+        For that we are setting a rounded rectangle as background and
+        setting text and color styles.
+    -->
     <style name="title" parent="base">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">16sp</item>
@@ -20,9 +31,20 @@
     </style>
 
     <style name="body" parent="base">
+        <!--
+            Setting text color to a shade of black.
+            It also inherits padding from base style.
+        -->
         <item name="android:textColor">#4B4B4B</item>
     </style>
 
+
+    <!--
+        This style makes a general activity into a dialog.
+        We set the windowBackground to the dialog drawable with
+        insets that we have prepared. We remove window frame, window title
+        and windowContentOverlay
+    -->
     <style name="dialog" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>

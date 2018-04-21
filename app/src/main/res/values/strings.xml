@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StylingAndroidAnimations</string>
+    <string name="styling_android">Styling Android</string>
+    <string name="dialog_content">This is a demonstration of how to customise theme to show an activity as a dialog.</string>
 </resources>
