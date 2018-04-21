@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--
+        Setting the background to white with green border. We add a small elevation
+        of 2 dp and make it clickable.
+    -->
     <style name="Widget.TextView.Boxed" parent="android:Widget.TextView">
         <item name="android:background">@drawable/background</item>
         <item name="android:padding">16dp</item>

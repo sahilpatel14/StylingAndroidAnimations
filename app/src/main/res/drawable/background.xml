@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    The background of our buttons. it has white color
+    along with a thin border of 2dp around it. The border
+    is of primary colour.
+-->
+
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke
         android:width="2dp"

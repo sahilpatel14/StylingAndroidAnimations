@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Here we have created a selector which is going to add different
+    animators based on the state of the button. When it is pressed, we
+    increases its size by a small margin and also increase its elevation.
+
+    When it's not pressed. The size is set to 1 with zero elevation.
+
+    This selector will be used in second button. The one that floats.
+-->
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <set>

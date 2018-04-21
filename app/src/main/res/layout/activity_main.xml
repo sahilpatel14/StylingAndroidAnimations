@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
+    <!--
+        We use style tag to provide our own background
+        and some of the similar properties.
+        foreground tag is used to set the preferred selector.
+        Pretty cool.
+    -->
+
     <TextView
         android:id="@+id/textView"
         style="@style/Widget.TextView.Boxed"
@@ -18,7 +25,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--
+        Property stateListAnimator can only be used for APK level 21
+        and above. It will be ignored for older versions.
+    -->
+
     <TextView
+        tools:tagetApi="lollipop"
         android:id="@+id/textView2"
         style="@style/Widget.TextView.Boxed"
         android:layout_width="wrap_content"

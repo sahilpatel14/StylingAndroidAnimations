@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Here we have created a selector for various states of the button.
+    Whenever the button is pressed, we change the color to transparent Accent
+    When it is not pressed, that shape is not visible.
+
+    This selector will be used in first button.
+-->
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:color="@color/transparentAccent"
         android:state_pressed="true">
