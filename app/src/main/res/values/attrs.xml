@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 2
+    Here we define the attributes that can be used to
+    customise our view. Here we are defining two attributes.
+    Images that will contain a drawable and a caption of type string.
+-->
+
 <resources>
     <declare-styleable name="BenefitView">
         <attr name="image" format="reference"/>

@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
+    <!--
+        todo 5
+        Finally we use this custom view and use app: namespace
+        to use user defined properties.
+    -->
+
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

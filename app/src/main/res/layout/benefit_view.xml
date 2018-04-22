@@ -8,6 +8,14 @@
     android:padding="16dp"
     android:layout_height="154dp">
 
+    <!--
+        todo 3
+        This is how our custom view would look like. We have defined
+        a View Group to contain everything. It contains an ImageView
+        and a TextView. we have also assigned ids to both
+        imageView and textView.
+    -->
+
     <ImageView
         android:contentDescription="@null"
         android:id="@+id/image"

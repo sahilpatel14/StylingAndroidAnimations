@@ -11,8 +11,23 @@ import android.widget.TextView
  */
 class BenefitView(context: Context, attrs : AttributeSet) : LinearLayout(context, attrs) {
 
+    /**
+     *  todo 4
+     *
+     *  This is our benefit view class. First we use the inflater to inflate
+     *  out custom view. Firstly, we inflate the layout [res/layout/benefit_view.xml]
+     *
+     *  Then we initialize both the child components and initialize the styleable
+     *  attribute defined for BenefitView.
+     *
+     *  After that we set the image on imageView and text on textView based on the
+     *  input set from styleable attribute.
+     *
+     *  Lastly we call attributes.recycle() to render those changes.
+     */
+
     init {
-        inflate(context, R.layout.benifit_view, this)
+        inflate(context, R.layout.benefit_view, this)
 
         val imageView : ImageView = findViewById(R.id.image)
         val textView : TextView = findViewById(R.id.caption)
