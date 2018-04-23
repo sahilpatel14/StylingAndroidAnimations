@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+    todo 1
+
+    Here we are defining our own styleables so that we can
+    provide pattern and highlightStyle directly from xml
+-->
+
 <resources>
     <declare-styleable name="HighlightedTextView">
+
+        <!-- We need to intercept the text too -->
         <attr name="android:text" />
+
+        <!-- pattern would a simple string containing the pattern -->
         <attr name="pattern" format="string" />
+
+        <!-- highlight style can be normal, bold, italic. We
+            provide 3 different values for whatever is selected.
+         -->
         <attr name="highlightStyle">
             <flag name="normal" value="0" />
             <flag name="bold" value="1" />

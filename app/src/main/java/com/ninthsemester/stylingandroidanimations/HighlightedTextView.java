@@ -33,21 +33,36 @@ public class HighlightedTextView extends AppCompatTextView {
     public HighlightedTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
+        /*
+         * todo 3
+         * here we are going to initialise the styleable defined and read the input from the
+         * xml layout view.
+         */
+
+        //  Initialising the styleable
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.HighlightedTextView, defStyle, 0);
+
+        //  Getting the text for the textview.
         CharSequence text = ta.getString(R.styleable.HighlightedTextView_android_text);
 
+        //  IF a text ws set, we update it.
         if (text != null) {
             updateText(text);
         }
+
+        //  Reading the user entered pattern.
         String pattern = ta.getString(R.styleable.HighlightedTextView_pattern);
         if (pattern != null) {
             setPattern(pattern);
         }
+
+        //  Reading the user entered style.
         int style = ta.getInteger(R.styleable.HighlightedTextView_highlightStyle, -1);
         if (style >= 0) {
             setHighlightStyle(style);
         }
 
+        //  Very important to call recycle. This would force the GPU to redraw the whole view.
         ta.recycle();
     }
 
