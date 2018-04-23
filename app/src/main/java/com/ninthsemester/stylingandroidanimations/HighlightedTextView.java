@@ -16,11 +16,28 @@ import java.util.regex.Pattern;
  * Created by sahil-mac on 04/04/18.
  */
 
+
+/**
+ * todo 1
+ *
+ * This is our custom TextView which bolds the text at certain
+ * places based on the pattern.
+ */
+
 public class HighlightedTextView extends AppCompatTextView {
 
+    //  The pattern based on which we will style the text.
     private Pattern pattern;
+
+    //  The style which will be applied on the pattern.
     private int highlightStyle = Typeface.BOLD;
 
+    /*
+     * There are three constructors for three very specific purposes.
+     * Generally we can do with just the first one. The other two are
+     * used if we want the flexibility to update the TextView from styles.
+     *
+     */
     public HighlightedTextView(Context context) {
         this(context, null);
     }
@@ -33,10 +50,17 @@ public class HighlightedTextView extends AppCompatTextView {
         super(context, attrs, defStyle);
     }
 
+
     public String getPattern() {
         return pattern.pattern();
     }
 
+
+    /**
+     * Saves the pattern if it is valid and the calls updateText.
+     * UpdateText would style the text based on pattern and then
+     * call setText with this new text.
+     */
     public void setPattern(String pattern) {
         this.pattern = pattern == null ? null : Pattern.compile(pattern);
         updateText(getText());
@@ -46,7 +70,10 @@ public class HighlightedTextView extends AppCompatTextView {
         return highlightStyle;
     }
 
-    public void setHighlightStyle() {
+    /**
+     * Add a new style and calling updateText.
+     */
+    public void setHighlightStyle(int highlightStyle) {
         this.highlightStyle = highlightStyle;
         updateText(getText());
     }
@@ -57,6 +84,10 @@ public class HighlightedTextView extends AppCompatTextView {
         updateText(text);
     }
 
+    /**
+     * Here we use the spannable String to span styled text in String
+     * based on the pattern.
+     */
     public void updateText(CharSequence text) {
 
         Spannable spannable = new SpannableString(text);

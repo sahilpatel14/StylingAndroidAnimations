@@ -4,6 +4,10 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
+    <!--
+        todo 2
+        Using the new custom textView.
+    -->
     <com.ninthsemester.stylingandroidanimations.HighlightedTextView
         android:id="@+id/HighlightedText"
         android:layout_width="fill_parent"

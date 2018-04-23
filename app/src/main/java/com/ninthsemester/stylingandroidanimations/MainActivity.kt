@@ -10,6 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /**
+         * todo 3
+         * We set a pattern on which the style will be applied.
+         */
         HighlightedText.pattern = ("[Hh]ighlight")
     }
 }
