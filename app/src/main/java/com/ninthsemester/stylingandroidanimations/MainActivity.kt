@@ -30,13 +30,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
+            //  The container in which grids will be added.
             mContainer = container
             mTransitionManager = TransitionManager()
 
+            //  We initialize the the three scenes here.
             mScene1 = Scene.getSceneForLayout(mContainer, R.layout.grid1, this)
             mScene2 = Scene.getSceneForLayout(mContainer, R.layout.grid2, this)
             mScene3 = Scene.getSceneForLayout(mContainer, R.layout.grid3, this)
 
+            //  Based on the scene which is setup, we add click listener to particular view.
             mScene1.setEnterAction {
                 mScene1.sceneRoot.findViewById<View>(R.id.item2).setOnClickListener(this)
                 mScene1.sceneRoot.findViewById<View>(R.id.item3).setOnClickListener(this)
@@ -52,13 +55,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 mScene3.sceneRoot.findViewById<View>(R.id.item2).setOnClickListener(this)
             }
 
+
+            //  We are going to transition by changing Bounds. This
+            //  thing gives us that fancy animation of moving items between places.
             val transition = ChangeBounds()
+
+            //  adding all possible transitions in transition manager
             mTransitionManager.setTransition(mScene1, mScene2, transition)
             mTransitionManager.setTransition(mScene1, mScene3, transition)
             mTransitionManager.setTransition(mScene2, mScene1, transition)
             mTransitionManager.setTransition(mScene2, mScene3, transition)
             mTransitionManager.setTransition(mScene3, mScene1, transition)
             mTransitionManager.setTransition(mScene3, mScene2, transition)
+
+            //  Setting scene 1 initially.
             mScene1.enter()
 
         }
@@ -68,6 +78,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
 
+        //  If a particular view is clicked, we transition to another
+        //  scene based on which item was clicked.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             when (v?.id) {
                 R.id.item1 -> mTransitionManager.transitionTo(mScene1)

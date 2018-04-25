@@ -6,6 +6,11 @@
     android:columnCount="2"
     android:padding="4dp">
 
+    <!--
+        todo 2
+        This is our second state.
+    -->
+
     <FrameLayout
         android:id="@+id/item2"
         android:layout_width="match_parent"

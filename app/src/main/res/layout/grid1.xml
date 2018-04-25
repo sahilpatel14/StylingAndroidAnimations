@@ -5,6 +5,12 @@
     android:columnCount="2"
     android:padding="2dp">
 
+    <!--
+        todo 1
+        First we define 3 transition states. We would be changing between
+        these 3 states. This is the first state.
+    -->
+
     <FrameLayout
         android:id="@+id/item1"
         android:layout_width="match_parent"

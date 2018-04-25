@@ -23,6 +23,11 @@
             android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"/>
     </FrameLayout>
 
+    <!--
+        todo 3
+        Our third state.
+    -->
+
     <FrameLayout
         android:id="@+id/item1"
         android:layout_width="wrap_content"
