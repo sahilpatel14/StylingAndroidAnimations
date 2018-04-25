@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 3
+    Here we create an animated vector out of checked drawable. This
+    will run whenever the user tries to change from checked to unchecked state.
+-->
+
 <animated-vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/toggle_checked">
 
+    <!--
+        trimPathEnd is an amazing property. It redraws the whole thing from start
+        to finish. This way, we see the tick mark as getting drawn.
+    -->
     <target android:name="tick">
         <aapt:attr name="android:animation">
             <objectAnimator
@@ -16,6 +27,10 @@
         </aapt:attr>
     </target>
 
+    <!--
+        Here we are giving a color change animation
+        it our small tick. We make it go from green to gray
+    -->
     <target android:name="circle">
         <aapt:attr name="android:animation">
             <objectAnimator

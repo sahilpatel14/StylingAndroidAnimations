@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 6
+    For API level < 21, we don't have animated vectors, therefore we
+    simple set up a normal vector drawable for the states.
+-->
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/toggle_checked" android:state_checked="true" />
     <item android:drawable="@drawable/toggle_unchecked" android:state_checked="false" />

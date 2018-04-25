@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 1
+    We start by creating two vectors. This is the first one.
+    it shows how a checked button should look like.
+
+    We are also going to name paths so that it is easy to morph them later.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"

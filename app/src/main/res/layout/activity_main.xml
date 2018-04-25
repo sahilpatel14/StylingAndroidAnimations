@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.ninthsemester.stylingandroidanimations.MainActivity">
 
+    <!--
+        todo 7
+        setting up the vector is simple. we set it up using the button
+        property.
+    -->
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

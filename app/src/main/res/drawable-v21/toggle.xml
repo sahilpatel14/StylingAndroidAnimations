@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 5
+    If you thought that was enough, that you are wrong. At this stage
+    we have the vectors but we still need to set them up using a selector.
+
+    For animated-vectors we use animated-selectors
+-->
+
 <animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- In checked state, we simple show the vector -->
     <item android:id="@+id/checked"
         android:drawable="@drawable/toggle_checked"
         android:state_checked="true"/>
 
+    <!-- In unchecked state, we show a vector, simple -->
     <item android:id="@+id/unchecked"
         android:drawable="@drawable/toggle_unchecked"
         android:state_checked="false"/>
 
+    <!-- When we are transitioning from one id to another, use these. -->
     <transition
         android:drawable="@drawable/toggle_unchecked_checked"
         android:fromId="@+id/unchecked"
         android:toId="@+id/checked"/>
+
 
     <transition
         android:drawable="@drawable/toggle_checked_unchecked"
