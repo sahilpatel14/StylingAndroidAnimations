@@ -8,6 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!--
+        todo 1
+        We are creating a style that would we associated with
+        highlight TextView.
+    -->
     <style name="HighlightedTextViewStyle" parent="@android:style/Widget.TextView">
         <item name="highlightStyle">bold|italic</item>
         <item name="pattern">([Hh]ighlight)</item>

@@ -5,9 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <!--
+        todo 3
+        Setting the the highlighted TextView style to our theme.
+        This all HighLighted TextViews will have that style.
+    -->
     <com.ninthsemester.stylingandroidanimations.HighlightedTextView
         android:id="@+id/HighlightedText"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
 </LinearLayout>

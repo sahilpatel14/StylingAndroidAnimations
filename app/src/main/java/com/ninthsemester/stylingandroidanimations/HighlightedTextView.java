@@ -26,6 +26,11 @@ public class HighlightedTextView extends AppCompatTextView {
         this(context, null);
     }
 
+    /**
+     * todo 2
+     * Here we setup our style for highlighted textview and set it up. This way
+     * every HighLighted textview will have that style.
+     */
     public HighlightedTextView(Context context, AttributeSet attrs) {
         this(context, attrs, R.attr.highlightedTextViewStyle);
     }
