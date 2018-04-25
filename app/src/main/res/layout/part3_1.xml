@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    todo 1
+    These are our 2 states. Our two scenes. We have three buttons here.
+
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/parent"
     android:layout_width="match_parent"
@@ -10,7 +17,7 @@
 
     <TextView
         android:id="@+id/item_1a"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/item_height"
         android:background="@color/red"
@@ -21,7 +28,7 @@
 
     <TextView
         android:id="@+id/item_1b"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/item_height"
         android:background="@color/green"
@@ -32,7 +39,7 @@
 
     <TextView
         android:id="@+id/item_1c"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/item_height"
         android:background="@color/blue"

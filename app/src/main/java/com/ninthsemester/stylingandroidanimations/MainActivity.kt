@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mContainer = container
             mTransitionManager = TransitionManager()
 
+            //  todo 3
+            // This time we only have two scenes to change into.
             mScene1 = Scene.getSceneForLayout(mContainer, R.layout.part3_1, this)
             mScene2 = Scene.getSceneForLayout(mContainer, R.layout.part3_2, this)
 
@@ -44,9 +46,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 //            val transition = AutoTransition()
 //            or
+            //  We create a transition set here. We have two transitions
+            //  in the set. The first one is changeBonds and the second one
+            //  is for fading effect.
             val transition = TransitionSet()
             transition.ordering = TransitionSet.ORDERING_TOGETHER
             transition.addTransition(ChangeBounds()).addTransition(Fade())
+
+            //  Adding the transition to both the scenes and setting first scene
+            //  to show when screen loads
             mTransitionManager.setTransition(mScene1, mScene2, transition)
             mTransitionManager.setTransition(mScene2, mScene1, transition)
             mScene1.enter()
